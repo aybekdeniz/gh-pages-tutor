@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar">
+    <h1>Rekvetas</h1>
+    <div class="topbar-links">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="login.html">Giriş Yap</a>
+        <a href="register.html">Kayıt Ol</a>
+        <a href="order.html">Sipariş Oluştur</a>
+        <a href="info.html">Bilgi</a>
+        <a href="contact.html">Bize Ulaşın</a>
+    </div>
+    <div class="menu" id="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+</div>
+
+<!-- Giriş Formu -->
+<div class="container">
+    <h2>Giriş Yap</h2>
+    <form id="login-form" onsubmit="return validateLogin()">
+        <input type="email" id="email" placeholder="Email" required><br><br>
+        <input type="password" id="password" placeholder="Şifre" required><br><br>
+        <button type="submit">Giriş Yap</button>
+    </form>
+    <p>Henüz kaydınız yok mu? <a href="register.html">Kayıt Ol</a></p>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

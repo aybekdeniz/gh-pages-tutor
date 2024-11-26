@@ -1,0 +1,145 @@
+/* Genel Stil */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Topbar */
+.topbar {
+    background: linear-gradient(90deg, #f06, #48c6ef);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.topbar-logo h1 {
+    color: white;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.topbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.topbar-links a:hover {
+    color: #ffd700;
+}
+
+/* Menü Çizgileri */
+.menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-line {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+/* Menüyü responsive yap */
+@media (max-width: 768px) {
+    .topbar .topbar-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .topbar .menu {
+        display: block;
+    }
+
+    .topbar-links.active {
+        display: flex;
+    }
+
+    .topbar-links a {
+        margin: 10px 0;
+    }
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Bize Ulaşın */
+.contact-page {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: #222;
+    padding: 20px 0;
+    color: white;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+/* Diğer Stil ve Düzenlemeler */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #48c6ef;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #f06;
+}

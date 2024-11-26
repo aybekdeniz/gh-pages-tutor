@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipariş Oluştur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Topbar -->
+<div class="topbar">
+    <h1>Rekvetas</h1>
+    <div class="topbar-links">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="login.html">Giriş Yap</a>
+        <a href="register.html">Kayıt Ol</a>
+        <a href="order.html">Sipariş Oluştur</a>
+        <a href="info.html">Bilgi</a>
+        <a href="contact.html">Bize Ulaşın</a>
+    </div>
+    <div class="menu" id="menu">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+</div>
+
+<!-- Sipariş Formu -->
+<div class="container">
+    <h2>Sipariş Oluştur</h2>
+    <form id="order-form" onsubmit="return submitOrder()">
+        <label for="page-name">Sayfa İsmi Seçiniz:</label><br>
+        <input type="text" id="page-name" required><br><br>
+
+        <label for="color-combination">Renk Kombinasyonu Seçiniz:</label><br>
+        <input type="text" id="color-combination" required><br><br>
+
+        <label for="page-type">Sayfa Türü Seçiniz:</label><br>
+        <select id="page-type" required>
+            <option value="sade">Sade</option>
+            <option value="renkli">Renkli</option>
+        </select><br><br>
+
+        <label for="reason">Bu Sayfayı Neden Açıyorsunuz?</label><br>
+        <input type="text" id="reason" required><br><br>
+
+        <label for="images">Sayfada Kullanmak İstediğiniz Resimler:</label><br>
+        <input type="file" id="images" multiple><br><br>
+
+        <button type="submit">Siparişi Gönder</button>
+    </form>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
